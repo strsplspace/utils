@@ -39,5 +39,5 @@ getgenv()['cenv'].Find = function(function_name)
     end;
 end;
 --// Notify about loading
-warn(('Custom functions finished loading, took: %.8f'):format(tick() - Timer));
-warn(('Compatibility test is %s'):format(cenv.Test() and 'succeed' or 'failed'));
+printconsole(('Custom functions finished loading, took: %.8f'):format(tick() - Timer),0,127,255);
+printconsole(('Compatibility test is %s'):format(cenv.Test() and 'succeed' or 'failed'),0,218,148);
