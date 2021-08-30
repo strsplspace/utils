@@ -25,9 +25,11 @@ getgenv()['cenv'].Test = function()
 end;
 --// Returns function list in console
 getgenv()['cenv'].GetFunctions = function()
-    print('------ FUNCTIONS LIST ------')
-    table.foreach(Functions,print);
-    print('------ FUNCTIONS LIST END ------')
+    printconsole('------ FUNCTIONS LIST ------',0,127,255)
+    table.foreach(Functions,function(i,v)
+        printconsole(("%s %s"):format(i,tostring(v)),255,182,193);
+    end);
+    printconsole('------ FUNCTIONS LIST END ------',0,127,255)
 end;
 --// Finds the needable function and returns it
 getgenv()['cenv'].Find = function(function_name)
