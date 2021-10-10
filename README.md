@@ -1,3 +1,7 @@
+# Loader
+```lua
+loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/strsplspace/utils/main/cenv.lua'))();
+```
 # Usage
 
 ## getprotoclosures
