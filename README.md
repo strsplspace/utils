@@ -46,9 +46,9 @@ for i,v in next,getgc(true) do
         local Consts = {
     	["1"] = "print",
     	["2"] = "a",
-		["3"] = "warn",
-		["4"] = "b"
-		};
+	["3"] = "warn",
+	["4"] = "b"
+	};
         for i2,v2 in next,Consts do
             if table.find(debug.getconstants(v),v2) then
                 Function = v;
