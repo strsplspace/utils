@@ -17,7 +17,7 @@ for i,v in next,getgc(true) do
         end;
     end;
 end;]=]):format(DumpTable(vl));
-    if (mode == 2) then Code = Code:gsub('Consts','Ups'); Code = Code:gsub('getconstants','getupvalues') end;
+    if (mode == 2) then Code = Code:gsub('Consts','Ups'); Code = Code:gsub('getconstants','getupvalues'); end;
     return Code;
 end;
 
