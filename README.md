@@ -13,7 +13,7 @@ Returns the protos of LocalScript
 
 ## searchclosureconst
 ```lua
-<function> searchclosureconst(<any> Constants)
+<function> searchclosureconst(<any> Constants);
 ```
 Returns the function that contains ``` Constants ```
 
@@ -46,9 +46,9 @@ for i,v in next,getgc(true) do
         local Consts = {
     	["1"] = "print",
     	["2"] = "a",
-		["3"] = "warn",
-		["4"] = "b"
-		};
+	["3"] = "warn",
+	["4"] = "b"
+	};
         for i2,v2 in next,Consts do
             if table.find(debug.getconstants(v),v2) then
                 Function = v;
@@ -60,13 +60,13 @@ end;
 
 ## searchclosureups
 ```lua
-<function> searchclosureups(<any> Upvalues)
+<function> searchclosureups(<any> Upvalues);
 ```
 Works same as ```searchclosureconst``` but with ```Upvalues```
 
 ## getscriptlocals
 ### SYNAPSE DONT SUPPORT THIS FUNCTION RIGHT NOW
 ```lua
-<table> getscriptlocals(<LocalScript>)
+<table> getscriptlocals(<LocalScript>);
 ```
 Returns the NON Upvalue variables of script
