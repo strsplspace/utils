@@ -70,3 +70,5 @@ Works same as ```searchclosureconst``` but with ```Upvalues```
 <table> getscriptlocals(<LocalScript>);
 ```
 Returns the NON Upvalue variables of script
+# Note
+This project can contain bugs,if you find a bug make a pull request.
