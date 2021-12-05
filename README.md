@@ -69,5 +69,31 @@ Works same as ```searchclosureconst``` but with ```Upvalues```
 <table> getscriptlocals(<LocalScript>);
 ```
 Returns the NON Upvalue variables of script
+
+# Cenv
+
+## cenv.Test
+```lua
+<boolean> cenv.Test(<nil>);
+```
+The compatability function
+
+## cenv.GetFunctions
+```lua
+cenv.GetFunctions(<nil>);
+```
+Prints all functions in Synapse console, that are supported
+
+## cenv.Find
+```lua
+<string> cenv.Find(<string> Function name);
+```
+Returns the name of function if finds it
+
+## cenv.Copy
+```lua
+cenv.Copy = <boolean>
+```
+Responsible for copying in SG.Generate,by default its true
 # Note
 This project can contain bugs,if you find a bug make a pull request.
