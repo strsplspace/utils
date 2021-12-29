@@ -66,9 +66,9 @@ Works same as ```searchclosureconst``` but with ```Upvalues```
 ## getscriptlocals
 ### SYNAPSE DONT SUPPORT THIS FUNCTION RIGHT NOW
 ```lua
-<table> getscriptlocals(<LocalScript>);
+<table> getscriptlocals(<LocalScript>,Iterations);
 ```
-Returns the NON Upvalue variables of script
+Returns the NON Upvalue variables of script,by default iterations = 400
 
 # Cenv
 
