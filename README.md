@@ -63,6 +63,12 @@ end;
 ```
 Works same as ```searchclosureconst``` but with ```Upvalues```
 
+## gcsenv
+```lua
+<table> gcsenv(<LocalScript>);
+```
+Works same as regular ```getsenv``` but uses gc instead,it can be useful if function in table,regular ```getsenv``` dont gonna return that function
+
 ## getscriptlocals
 ### SYNAPSE DONT SUPPORT THIS FUNCTION RIGHT NOW
 ```lua
@@ -74,13 +80,13 @@ Returns the NON Upvalue variables of script
 
 ## cenv.Test
 ```lua
-<boolean> cenv.Test(<nil>);
+<boolean> cenv.Test(<void>);
 ```
 The compatability function
 
 ## cenv.GetFunctions
 ```lua
-cenv.GetFunctions(<nil>);
+cenv.GetFunctions(<void>);
 ```
 Prints all functions in Synapse console, that are supported
 
