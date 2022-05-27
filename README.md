@@ -72,9 +72,9 @@ Works same as regular ```getsenv``` but uses gc instead,it can be useful if func
 ## getscriptlocals
 ### SYNAPSE DONT SUPPORT THIS FUNCTION RIGHT NOW
 ```lua
-<table> getscriptlocals(<LocalScript>);
+<table> getscriptlocals(<LocalScript>,Iterations);
 ```
-Returns the NON Upvalue variables of script
+Returns the NON Upvalue variables of script,by default iterations = 400
 
 # Cenv
 
