@@ -70,7 +70,6 @@ Works same as ```searchclosureconst``` but with ```Upvalues```
 Works same as regular ```getsenv``` but uses gc instead,it can be useful if function in table,regular ```getsenv``` dont gonna return that function
 
 ## getscriptlocals
-### SYNAPSE DONT SUPPORT THIS FUNCTION RIGHT NOW
 ```lua
 <table> getscriptlocals(<LocalScript>,Iterations);
 ```
