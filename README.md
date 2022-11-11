@@ -71,7 +71,7 @@ Works same as regular ```getsenv``` but uses gc instead,it can be useful if func
 
 ## getscriptlocals
 ```lua
-<table> getscriptlocals(<LocalScript>,Iterations);
+<table> getscriptlocals(<LocalScript>,<Optional> Iterations);
 ```
 Returns the NON Upvalue variables of script,by default iterations = 400
 
